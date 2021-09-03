@@ -1,0 +1,55 @@
+body{
+  background-color: #c2c0db;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.input h1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: cursive;
+}
+
+.input div{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.input .click{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.input button {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.output {
+  display: flex;
+  justify-content: space-around;
+}
+
+.output p{
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>AI4I Predictive Maintenance</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>AI4I Predictive Maintenance</h1>
+    </div>
+    <div class="profile">
+      <form class="profile-report" action="/profile-report">
+        <button type="submit">Get Profile Report</button>
+      </form>
+    </div>
+    <div class="input">
+      <form class="take_input" action = "/predict" method="POST">
+      <div>
+        <label for="Product ID">Product ID :</label>
+        <input type="text" id="Product ID" name="Product ID" />
+      </div>
+      <div>
+        <label for="Type">Type :</label>
+        <input type="text" id="Type" name="Type" />
+      </div>
+      <div>
+        <label for="Process temperature [K]">Process temperature [K] :</label>
+        <input type="text" id="Process temperature [K]" name="Process temperature [K]" />
+      </div>
+      <div>
+        <label for="Rotational speed [rpm]">Rotational speed [rpm] :</label>
+        <input type="text" id="Rotational speed [rpm]" name="Rotational speed [rpm]" />
+      </div>
+      <div>
+        <label for="Torque [Nm]">Torque [Nm] :</label>
+        <input type="text" id="Torque [Nm]" name="Torque [Nm]" />
+      </div>
+      <div>
+        <label for="Tool wear [min]">Tool wear [min] :</label>
+        <input type="text" id="Tool wear [min]" name="Tool wear [min]" />
+      </div>
+      <div>
+        <label for="Machine failure">Machine Failure :</label>
+        <select id="Machine failure" name="Machine failure">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+      <div>
+        <label for="TWF">TWF :</label>
+        <select id="TWF" name="TWF">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+      <div>
+        <label for="HDF">HDF :</label>
+        <select id="HDF" name="HDF">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+      <div>
+        <label for="PWF">PWF :</label>
+        <select id="PWF" name="PWF">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+      <div>
+        <label for="OSF">OSF :</label>
+        <select id="OSF" name="OSF">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+      <div>
+        <label for="RNF">RNF :</label>
+        <select id="RNF" name="RNF">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+      <div>
+        <label for="Model">Model :</label>
+        <select id="Model" name="Model">
+          <option value="lin_reg">Linear Regression</option>
+          <option value="ridge">Ridge Regression</option>
+          <option value="lasso">Lasso Regression</option>
+          <option value="elastic_net">Elastic Net</option>
+        </select>
+      </div>
+      <div class="click">
+        <button type="submit">Submit</button>
+      </div>
+      </form>
+    </div>
+
+    <div class="output">
+      <p>
+        {{results}}
+      </p>
+    </div>
+  </body>
+</html>
