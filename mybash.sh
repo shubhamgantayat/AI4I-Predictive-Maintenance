@@ -3,5 +3,4 @@ git config user.name "Shubham Gantayat"
 
 git add .
 git commit -m "mlflow-commit"
-heroku login -i
-git push heroku master
+git push
