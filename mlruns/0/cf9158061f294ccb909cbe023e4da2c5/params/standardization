@@ -1,0 +1,5 @@
+ColumnTransformer(transformers=[('num', StandardScaler(),
+                                 ['Process temperature [K]',
+                                  'Rotational speed [rpm]',
+                                  'Tool wear [min]']),
+             ...

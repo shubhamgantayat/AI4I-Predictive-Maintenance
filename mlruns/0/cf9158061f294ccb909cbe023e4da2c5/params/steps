@@ -1,0 +1,4 @@
+[('drop_columns', DropColumns()), ('standardization', ColumnTransformer(transformers=[('num', StandardScaler(),
+                                 ['Process temperature [K]',
+                                  'Rotational speed [rpm]',
+              ...
