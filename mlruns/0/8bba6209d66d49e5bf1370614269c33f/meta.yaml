@@ -1,5 +1,5 @@
 artifact_uri: file:///C:/Users/ASUS/PycharmProjects/AI4I_Predictive_Maintenance/mlruns/0/8bba6209d66d49e5bf1370614269c33f/artifacts
-end_time: null
+end_time: 1631897730469
 entry_point_name: ''
 experiment_id: '0'
 lifecycle_stage: active
@@ -10,6 +10,6 @@ source_name: ''
 source_type: 4
 source_version: ''
 start_time: 1631897718822
-status: 1
+status: 4
 tags: []
 user_id: ASUS
